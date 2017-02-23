@@ -77,6 +77,7 @@ console.log(loopToChange(currentClasses));
 function arrayMethodToLoop(numbers){
 	//Print the parameter that is being passed through the function
 	//console.log(numbers);
+	var newValue = []; 
 	//Use the forEach() method to add 5 to each value in the passed array
 	var splices = numbers.splice(numbers.length);
 	//console.log(splices);
@@ -85,12 +86,15 @@ function arrayMethodToLoop(numbers){
 	//console.log("Index Value: ", index);
 	//console.log("Array Value: ", arr);
 	var current = curr + 5;
-	//console.log(curr + 5);
+	//console.log(current);
+	newValue.push(current);
+	//console.log(newValue);
 	//var splices = numbers.splice(numbers.length, current);
-	
-	})
+		}
+
+	)
 	//Return the changed array
-	return numbers;
+	return newValue;
 }
 
 console.log(arrayMethodToLoop([5, 7, 3, 4, 5]));
@@ -103,17 +107,25 @@ console.log(arrayMethodToLoop([5 + 1, 3]));
 */
 function moreArrayMethods(priorities){
 	//Print the parameter that is being passed through the function
-
+	//console.log(priorities);
 	//Use the method sort() to sort your priorities
-
+	var p = priorities;
+	p.sort();
+	//console.log(priorities);
 	//Use the method indexOf() to replace "Not Going to Class" to "Going to Class"
-
+	var indexing = p.indexOf(" Not Going to Class");
+	//console.log(indexing);
+	var splicing1 = p.splice(indexing, 1, " Going to Class ");
+	//console.log(priorities);
 	//Use the method pop() to remove the item at the end of the array
-
+	//console.log(priorities);
+	p.pop();
+	//console.log(priorities);
 	//Use the method push() to add a priority that is important to the success of this class and don't forget to sort() them afterwards!
-
+	p.push(" EFFORT");
+	p.sort();
 	//Return the changed array
-	return;
+	return "To succeed you need to have or do these things: " + p;
 }
 
-console.log(moreArrayMethods(["Zero Play", "Sleeping", "HW", "Work", "School", "Planning For Future", "Not Going to Class"]));
+console.log(moreArrayMethods([" Zero Play", " Sleeping", " HW", " Work", " School", " Planning For Future", " Not Going to Class"]));
