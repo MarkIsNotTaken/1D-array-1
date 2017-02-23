@@ -86,14 +86,14 @@ function arrayMethodToLoop(numbers){
 	//console.log("Array Value: ", arr);
 	var current = curr + 5;
 	//console.log(current);
-	numbers.push(current);
-	console.log(numbers);
+	newValue.push(current);
+	//console.log(newValue);
 	//var splices = numbers.splice(numbers.length, current);
 		}
 
 	)
 	//Return the changed array
-	return;
+	return newValue;
 }
 
 console.log(arrayMethodToLoop([5, 7, 3, 4, 5]));
