@@ -79,7 +79,6 @@ function arrayMethodToLoop(numbers){
 	//console.log(numbers);
 	var newValue = []; 
 	//Use the forEach() method to add 5 to each value in the passed array
-	var splices = numbers.splice(numbers.length);
 	//console.log(splices);
 	numbers.forEach(function(curr){
 	//console.log("Current Value: ", curr);
@@ -87,14 +86,14 @@ function arrayMethodToLoop(numbers){
 	//console.log("Array Value: ", arr);
 	var current = curr + 5;
 	//console.log(current);
-	newValue.push(current);
-	//console.log(newValue);
+	numbers.push(current);
+	console.log(numbers);
 	//var splices = numbers.splice(numbers.length, current);
 		}
 
 	)
 	//Return the changed array
-	return newValue;
+	return;
 }
 
 console.log(arrayMethodToLoop([5, 7, 3, 4, 5]));
