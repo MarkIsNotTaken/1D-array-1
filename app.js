@@ -59,7 +59,7 @@ function loopToChange(classes){
 	//Print the parameter that is being passed through the function
 	//console.log(classes);
 	//Use a For loop to iterate through each value in the passed array
-	for (var i = classes.length - 1; i >= 0 && i != 8; i--) {
+	for (var i = classes.length - 1; i >= 0; i--) {
 		console.log(currentClasses[i]);
 	}
 	//Return classes
@@ -93,7 +93,7 @@ function arrayMethodToLoop(numbers){
 
 	)
 	//Return the changed array
-	return newValue;
+	return newValue.sort();
 }
 
 console.log(arrayMethodToLoop([5, 7, 3, 4, 5]));
