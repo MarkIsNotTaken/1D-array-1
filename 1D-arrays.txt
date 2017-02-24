@@ -4,7 +4,9 @@ You must give a short explanation for each answer.
 
 1) Create a reference to an array of integers named "cat".
 
+var cat = [1, 2, 3, 4, 5];
 
+console.log(cat[1]);
 
 2) What is the output of the following code fragment?
 
