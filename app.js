@@ -93,7 +93,7 @@ function arrayMethodToLoop(numbers){
 
 	)
 	//Return the changed array
-	return newValue.sort();
+	return newValue.sort(function(a, b){return a-b});
 }
 
 console.log(arrayMethodToLoop([5, 7, 3, 4, 5]));
